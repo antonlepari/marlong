@@ -1,0 +1,13 @@
+# GitHub dork templates. {target} is substituted at scan time.
+# 'code' templates hit the code-search API; 'repo' templates hit the
+# repository-search API. Use your org / domain / project name as target.
+code:
+  - '"{target}" password'
+  - '"{target}" api_key'
+  - '"{target}" secret'
+  - '"{target}" AWS_SECRET_ACCESS_KEY'
+  - '"{target}" filename:.env'
+  - '"{target}" filename:credentials'
+repo:
+  - "{target}"
+  - "{target} in:name,description"

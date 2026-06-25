@@ -1,0 +1,29 @@
+# --- generated output ---
+reports/
+*.db
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- environment / secrets ---
+.env
+.env.*
+*.env
+
+# --- virtual environments ---
+venv/
+.venv/
+env/
+
+# --- tools ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

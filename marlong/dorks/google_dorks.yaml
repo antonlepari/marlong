@@ -1,0 +1,13 @@
+# Google dork templates. {target} is substituted at scan time.
+# Keep these focused on surfacing *your own* exposed assets during
+# authorised reviews. Add/remove freely.
+dorks:
+  - "site:{target}"
+  - "site:{target} filetype:pdf"
+  - "site:{target} filetype:xls OR filetype:xlsx OR filetype:csv"
+  - "site:{target} filetype:env OR filetype:cfg OR filetype:conf OR filetype:ini"
+  - "site:{target} intitle:index.of"
+  - "site:{target} inurl:admin OR inurl:login"
+  - "site:{target} ext:sql OR ext:bak OR ext:old"
+  - '"{target}" "api_key" OR "apikey" OR "secret"'
+  - "site:pastebin.com {target}"
